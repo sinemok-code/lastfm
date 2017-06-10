@@ -1,0 +1,11 @@
+
+<div>
+  <label>Search name:</label> <input #artistName />
+  <button (click)="search(artistName.value)">
+    Search
+  </button>
+</div>
+
+<input type="radio" value="artist" name="itemType" #v1 (change)="logRadio(v1.value)" > Artist
+<input type="radio" value="album" name="itemType" #v2 (change)="logRadio(v2.value)" /> Album
+<input type="radio" value="track" name="itemType" #v3 (change)="logRadio(v3.value)" /> Track
